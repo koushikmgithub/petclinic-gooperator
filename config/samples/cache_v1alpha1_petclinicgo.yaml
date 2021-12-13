@@ -1,0 +1,8 @@
+apiVersion: cache.example.com/v1alpha1
+kind: PetclinicGo
+metadata:
+  name: petclinicgo-sample
+spec:
+  # Add fields here
+  size: 1
+  image: dockertestbaby/spring-petclinic:1.0

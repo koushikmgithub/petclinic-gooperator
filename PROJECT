@@ -1,0 +1,19 @@
+domain: example.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: petclinic-gooperator
+repo: github.com/koushikmgithub/petclinic-gooperator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.com
+  group: cache
+  kind: PetclinicGo
+  path: github.com/koushikmgithub/petclinic-gooperator/api/v1alpha1
+  version: v1alpha1
+version: "3"
